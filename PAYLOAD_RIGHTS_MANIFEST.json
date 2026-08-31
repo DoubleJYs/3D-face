@@ -1,0 +1,16 @@
+{
+  "binding": "PUBLIC_FILE_MANIFEST.json assigns one deterministic rights_id to every public payload file.",
+  "model_weights_or_checkpoints_included": false,
+  "provider_data_included": false,
+  "publication_authorized": true,
+  "rights_classes": {
+    "Apache-2.0": "author-created source, documentation, and public provenance",
+    "CC-BY-4.0": "anonymous derived tables and non-face audit figures",
+    "NOASSERTION": "verbatim legal license texts"
+  },
+  "schema_version": "faceuv-eval.public-rights.v1",
+  "source_portraits_included": false,
+  "status": "PUBLIC_RELEASE_RIGHTS_CLASSIFIED",
+  "third_party_legal_texts_included": true,
+  "third_party_runtime_or_research_assets_included": false
+}

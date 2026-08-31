@@ -1,0 +1,9 @@
+internal_identifier,paper_display_name
+full,FrugalFace3D-Lite
+condition0,无显式条件残差（NoCond）
+b_lite,固定权重 B-lite
+b_lite_ft,B-lite 同任务微调
+lama,LaMa-UV
+zits,ZITS-UV
+freeuv_conserved,FreeUV（已观测纹理保持输出）
+freeuv_native,FreeUV（原始输出）

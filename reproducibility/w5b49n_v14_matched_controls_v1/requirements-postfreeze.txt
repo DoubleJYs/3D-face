@@ -1,0 +1,6 @@
+# Frozen current-Linux evaluator environment record.
+# Do not install from the network during qualification or metric execution.
+numpy==1.23.1
+Pillow==10.4.0
+torch==2.4.0+cu121
+opencv-python-headless==4.10.0.84

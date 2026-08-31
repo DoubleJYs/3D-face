@@ -1,0 +1,124 @@
+{
+  "artifacts": {
+    "analysis_program": {
+      "path": "/absolute/path/analyze_v14_matched_controls.py",
+      "sha256": "PENDING"
+    },
+    "b_lite_frozen_terminal": {
+      "path": "/absolute/path/B_LITE_FROZEN_TERMINAL.json",
+      "sha256": "PENDING"
+    },
+    "b_lite_ft_seed_2026080447_terminal": {
+      "path": "/absolute/path/B_LITE_FT_2026080447_TERMINAL.json",
+      "sha256": "PENDING"
+    },
+    "b_lite_ft_seed_2026080448_terminal": {
+      "path": "/absolute/path/B_LITE_FT_2026080448_TERMINAL.json",
+      "sha256": "PENDING"
+    },
+    "b_lite_ft_seed_2026080449_terminal": {
+      "path": "/absolute/path/B_LITE_FT_2026080449_TERMINAL.json",
+      "sha256": "PENDING"
+    },
+    "b_lite_ft_seed_2026080450_terminal": {
+      "path": "/absolute/path/B_LITE_FT_2026080450_TERMINAL.json",
+      "sha256": "PENDING"
+    },
+    "b_lite_ft_seed_2026080451_terminal": {
+      "path": "/absolute/path/B_LITE_FT_2026080451_TERMINAL.json",
+      "sha256": "PENDING"
+    },
+    "claim_decision_matrix": {
+      "path": "/absolute/path/V14_CLAIM_DECISION_MATRIX.md",
+      "sha256": "PENDING"
+    },
+    "condition0_seed_2026080447_terminal": {
+      "path": "/absolute/path/CONDITION0_2026080447_TERMINAL.json",
+      "sha256": "PENDING"
+    },
+    "condition0_seed_2026080448_terminal": {
+      "path": "/absolute/path/CONDITION0_2026080448_TERMINAL.json",
+      "sha256": "PENDING"
+    },
+    "condition0_seed_2026080449_terminal": {
+      "path": "/absolute/path/CONDITION0_2026080449_TERMINAL.json",
+      "sha256": "PENDING"
+    },
+    "condition0_seed_2026080450_terminal": {
+      "path": "/absolute/path/CONDITION0_2026080450_TERMINAL.json",
+      "sha256": "PENDING"
+    },
+    "condition0_seed_2026080451_terminal": {
+      "path": "/absolute/path/CONDITION0_2026080451_TERMINAL.json",
+      "sha256": "PENDING"
+    },
+    "d1_eval_cache_terminal": {
+      "path": "/absolute/path/D1_EVAL_CACHE_TERMINAL.json",
+      "sha256": "PENDING"
+    },
+    "d2_eval_cache_terminal": {
+      "path": "/absolute/path/D2_EVAL_CACHE_TERMINAL.json",
+      "sha256": "PENDING"
+    },
+    "freeuv_v1_2_terminal": {
+      "path": "/absolute/path/FREEUV_V1_2_TERMINAL.json",
+      "sha256": "PENDING"
+    },
+    "full_seed_2026080447_terminal": {
+      "path": "/absolute/path/FULL_2026080447_TERMINAL.json",
+      "sha256": "PENDING"
+    },
+    "full_seed_2026080448_terminal": {
+      "path": "/absolute/path/FULL_2026080448_TERMINAL.json",
+      "sha256": "PENDING"
+    },
+    "full_seed_2026080449_terminal": {
+      "path": "/absolute/path/FULL_2026080449_TERMINAL.json",
+      "sha256": "PENDING"
+    },
+    "full_seed_2026080450_terminal": {
+      "path": "/absolute/path/FULL_2026080450_TERMINAL.json",
+      "sha256": "PENDING"
+    },
+    "full_seed_2026080451_terminal": {
+      "path": "/absolute/path/FULL_2026080451_TERMINAL.json",
+      "sha256": "PENDING"
+    },
+    "lpips_linux_qualification_terminal": {
+      "path": "/absolute/path/LPIPS_LINUX_QUALIFICATION_TERMINAL.json",
+      "sha256": "PENDING"
+    },
+    "lpips_terminal": {
+      "path": "/absolute/path/LPIPS_TERMINAL.json",
+      "sha256": "PENDING"
+    },
+    "sface_linux_qualification_terminal": {
+      "path": "/absolute/path/SFACE_LINUX_QUALIFICATION_TERMINAL.json",
+      "sha256": "PENDING"
+    },
+    "sface_terminal": {
+      "path": "/absolute/path/SFACE_TERMINAL.json",
+      "sha256": "PENDING"
+    },
+    "shared_render_terminal": {
+      "path": "/absolute/path/SHARED_RENDER_TERMINAL.json",
+      "sha256": "PENDING"
+    },
+    "statistical_analysis_plan": {
+      "path": "/absolute/path/STATISTICAL_ANALYSIS_PLAN.md",
+      "sha256": "PENDING"
+    }
+  },
+  "contract_sha256": "PENDING_CONTRACT_SHA256",
+  "metric_rows": {
+    "path": "/absolute/path/metric_rows.jsonl",
+    "sha256": "PENDING_METRIC_ROWS_SHA256"
+  },
+  "output_root": "/absolute/path/new_analysis_output",
+  "pair_roster": {
+    "path": "/absolute/path/pair_roster.json",
+    "sha256": "PENDING_PAIR_ROSTER_SHA256"
+  },
+  "schema_version": "frugalface3d.w5b49n.v14.input_binding.v1",
+  "status": "PENDING_DO_NOT_ANALYZE"
+}

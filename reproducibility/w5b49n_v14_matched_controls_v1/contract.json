@@ -1,0 +1,103 @@
+{
+  "b_lite_checkpoint": {
+    "path": "outputs/w5b13b2_e3c/selected_b_lite.pt",
+    "sha256": "2e7799205711a3bb0c809e47ea916e75e8e164dc1d4260f0fd97a8f2f1ac5da9"
+  },
+  "claim_boundary": {
+    "b_lite_ft_comparison": "Tests whether Full exceeds direct B-lite optimization under the same paired-view task supervision; it does not by itself isolate structure content.",
+    "condition0_comparison": "Tests the joint incremental contribution of explicit coordinate-normal and expression content under the same residual architecture, capacity, data, optimizer budget, and task loss family.",
+    "forbidden_before_execution": [
+      "Condition0 is worse than Full",
+      "B-lite-FT is worse than Full",
+      "explicit structure conditions are effective",
+      "matched controls support a mechanism claim"
+    ]
+  },
+  "default_seed_plan": "cuda_five",
+  "historical_full_reference_not_confirmatory": {
+    "2026080447": {
+      "path": "outputs/w5b47a_correct_a_multiseed_b_run2/seeds/B2026080447_P2026080547/B/checkpoints/step_0512.pt",
+      "sha256": "0498050c33d7b735ba6c5b84e95d1496b7f69da2a818e89bfc4bacf53d574161"
+    },
+    "2026080448": {
+      "path": "outputs/w5b47a_correct_a_multiseed_b_run2/seeds/B2026080448_P2026080548/B/checkpoints/step_0512.pt",
+      "sha256": "f0c64253fee5e8f42c5c80b5cd78302eaa1019b44295fea2bccb65622dce442c"
+    },
+    "2026080449": {
+      "path": "outputs/w5b47a_correct_a_multiseed_b_run2/seeds/B2026080449_P2026080549/B/checkpoints/step_0512.pt",
+      "sha256": "4ea3f2f2a145022c36d00fe3cbbca810f2e14e123ab9c2dffe33a62d7b884b30"
+    }
+  },
+  "methods": {
+    "B-lite-FT": {
+      "initialization": "frozen_B_lite_checkpoint",
+      "paper_label": "B-lite-FT",
+      "role": "same_task_supervision_finetuned_baseline",
+      "trainable_parameters": 122164,
+      "updated_scope": "all_B_lite_parameters"
+    },
+    "Condition0": {
+      "paper_label": "NoStruct",
+      "retained_inputs": [
+        "partial_uv",
+        "visibility",
+        "canonical_mask",
+        "base_completion",
+        "texture_feature"
+      ],
+      "role": "capacity_matched_no_explicit_structure_control",
+      "trainable_parameters": 89386,
+      "zeroed_inputs": [
+        "geometry_map_all_6_channels",
+        "expression_token_all_128_dimensions"
+      ]
+    },
+    "Full": {
+      "five_seed_policy": "train_all_five_on_same_cuda_device",
+      "paper_label": "FrugalFace3D-Lite",
+      "role": "reference_structure_conditioned_residual",
+      "trainable_parameters": 89386
+    }
+  },
+  "schema_version": "frugalface3d.w5b49n.v14_matched_controls.v1",
+  "seed_plans": {
+    "cuda_five": [
+      2026080447,
+      2026080448,
+      2026080449,
+      2026080450,
+      2026080451
+    ]
+  },
+  "status": "SOURCE_PACKAGE_ONLY_NO_SCIENTIFIC_RESULT",
+  "training": {
+    "automatic_retry": false,
+    "batch_size": 24,
+    "checkpoint_selection": false,
+    "gradient_clip_l2": 1.0,
+    "identity_triplet_margin": 0.1,
+    "learning_rate": 0.0005,
+    "loss_weights": {
+      "bounded_residual_L2": 0.01,
+      "identity_triplet": 0.25,
+      "paired_hidden_UV_L1": 8.0,
+      "paired_hidden_uncertainty_NLL": 0.25,
+      "same_identity_view_consistency": 0.5,
+      "structure_gate_noncollapse": 0.05,
+      "total_variation": 0.01
+    },
+    "steps": 512,
+    "weight_decay": 0.0001
+  },
+  "training_matrix": {
+    "cuda_five": {
+      "historical_mps_full_units_used_for_confirmation": 0,
+      "new_b_lite_ft_units": 5,
+      "new_condition0_units": 5,
+      "new_full_units": 5,
+      "new_optimizer_steps": 7680,
+      "new_training_units": 15,
+      "single_cuda_campaign_required": true
+    }
+  }
+}

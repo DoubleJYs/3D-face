@@ -1,0 +1,37 @@
+{
+  "analysis_program_sha256": "9f7f53529807af44ceb6e6e6793da84056b1e5ac35bd2909b8acbe66f67a0542",
+  "binding_sha256": "3b906b947c8afacf6780f66b6370286455c5b021c85d33ff92cb1d2f01b6aa8f",
+  "bootstrap_resamples": 10000,
+  "completed_at_utc": "2026-08-21T17:30:13.767547+00:00",
+  "contract_id": "W5B49N_V14_MATCHED_CONTROLS_V1",
+  "contract_sha256": "52bbc77fd6ca59f1ea8dd63c552efd3318ea23ba64ec1422ac712f37f98e131e",
+  "family_ids": [
+    "F1-MAE-ATTRIBUTION",
+    "F2-MAE-PUBLIC",
+    "F3-LPIPS",
+    "F4-SFACE"
+  ],
+  "metric_rows_sha256": "4db038a12125168f42f0849bbcb2b0c6c36d85c9c5f0317529cda8132ee18da3",
+  "multiple_comparison": "holm_within_each_prespecified_family",
+  "output_sha256": {
+    "ANALYSIS_RESULTS.json": "0f49cadf18857eefafae50bae9ce4afca73bb1c6606c16bc19dfb2e9b721e1c3",
+    "CLAIM_GATE_RESULTS.json": "a427681d8dd7563681bb38c4c530e9a75d9da7d78a39f7f824ef8ff6f7e650dc",
+    "FAMILY_RESULTS.csv": "bb051eaa8e45c224d8d46614f07020d8c5958f104a52e0c43659f0f83416e4b7",
+    "IDENTITY_EFFECTS.csv": "a28342075ea362adc0359ad2d593dcac008fc2988f21024132ae4deb353bf2ed",
+    "IDENTITY_EFFECTS.jsonl": "93c1672ab4e25629d080a04df9b6c7c9a7a67557e552e16c20b425f8a886fa91",
+    "INPUT_VALIDATION.json": "abe73b29d8c83f5a1af9bb50f5fb751ef4eb96b237621e2a26d1a8eaf68c4e7a",
+    "METRIC_COVERAGE.json": "cdb56787b960b48772376df5abcf0544450ae9498681ac7577c100842888caa1",
+    "SEED_RESULTS.csv": "4293096a6774f46cc439b62a404f87f59d12f7f51fc96939054f24221213fb62"
+  },
+  "pair_roster_sha256": "e6731fc8843bf863a67cbec28182ebdb68e6b7d2d1ab2e479775d3f5b68fafb0",
+  "schema_version": "frugalface3d.w5b49n.v14.analysis_output.v1",
+  "seeds": [
+    2026080447,
+    2026080448,
+    2026080449,
+    2026080450,
+    2026080451
+  ],
+  "sign_test": "two_sided_exact_binomial_p_0_5",
+  "status": "PASS_V14_MATCHED_CONTROLS_ANALYSIS_COMPLETE"
+}

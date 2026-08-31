@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite this software release."
+type: software
+title: "FaceUV-Eval"
+version: "1.0.0"
+date-released: 2026-08-31
+url: "https://github.com/DoubleJYs/FaceUV-Eval"
+repository-code: "https://github.com/DoubleJYs/FaceUV-Eval"
+license: Apache-2.0
+authors:
+  - family-names: "Zhao"
+    given-names: "Ya"
+  - family-names: "Zhang"
+    given-names: "Jiyan"
+  - family-names: "Xu"
+    given-names: "Chen"
+  - family-names: "Hui"
+    given-names: "Jinyuan"
+  - family-names: "Zhang"
+    given-names: "Jinhui"

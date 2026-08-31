@@ -1,0 +1,9 @@
+dataset_id,metric_id,median_identity_effect,identity_count,effect_definition,positive_means_conserved_favorable
+D1,hidden_uv_mae,0.0,20,native_minus_conserved,True
+D1,all_target_visible_uv_mae,0.01885262597707626,20,native_minus_conserved,True
+D1,lpips_alex_v0_1,0.013761116191744804,20,native_minus_conserved,True
+D1,sface_source_to_render_cosine,0.26887132948326653,19,conserved_minus_native,True
+D2,hidden_uv_mae,0.0,100,native_minus_conserved,True
+D2,all_target_visible_uv_mae,0.052823466421151294,100,native_minus_conserved,True
+D2,lpips_alex_v0_1,0.04517367109656334,100,native_minus_conserved,True
+D2,sface_source_to_render_cosine,0.29114068030463564,100,conserved_minus_native,True

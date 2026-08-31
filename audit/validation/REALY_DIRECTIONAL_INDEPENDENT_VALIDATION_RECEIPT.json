@@ -1,0 +1,20 @@
+{
+  "analysis_results_sha256": "ea5829987893ab9a1046fdf9fb73f36303bd3931741b97bbcfac7bc9ebc49a6d",
+  "archive_member_hashes_reverified": true,
+  "bootstrap_intervals_recomputed": 36,
+  "bootstrap_resamples_each": 10000,
+  "direction_authority_rows": 1200,
+  "direction_count": 12,
+  "direction_effect_rows_recomputed": 36,
+  "effect_summary_sha256": "3909a560d59c366993038f383b3a44ba3c5e1d1903f9068d72ca842db68f8ef7",
+  "formal_input_hashes_reverified": true,
+  "identity_effect_rows_recomputed": 3600,
+  "identity_effects_sha256": "6147bc69efdf8a1b470670289d1f882427bc4ae50b5750e4daefaa2584ec726c",
+  "new_multiple_comparison_corrections_computed": false,
+  "new_significance_tests_computed": false,
+  "pairs_per_direction": 100,
+  "schema_version": "frugalface3d.v15.additional_analysis.independent_validation.v1",
+  "status": "PASS_INDEPENDENT_RECOMPUTATION_FROM_FROZEN_PAIR_METRICS",
+  "support_summary_rows_recomputed": 12,
+  "support_summary_sha256": "70960d6dcd4fc1fd7a265d558630dd008257e728e1088bad1bda1fbf72136dde"
+}

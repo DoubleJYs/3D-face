@@ -1,0 +1,548 @@
+{
+  "directions": [
+    {
+      "all_target_visible_support_texels": {
+        "count": 100,
+        "max": 1341,
+        "mean": 1297.5,
+        "median": 1298.0,
+        "min": 1251,
+        "q1": 1286.0,
+        "q3": 1310.25
+      },
+      "direction": "V01→V02",
+      "direction_index": 0,
+      "fixed_hidden_support_threshold_counts": {
+        "1": 100,
+        "10": 100,
+        "20": 96,
+        "5": 100,
+        "50": 41
+      },
+      "h_over_a_ratio": {
+        "count": 100,
+        "max": 0.0724191063174114,
+        "mean": 0.03617455875932,
+        "median": 0.033666142718733624,
+        "min": 0.012791572610985704,
+        "q1": 0.02527382782475019,
+        "q3": 0.04562452522454087
+      },
+      "hidden_support_texels": {
+        "count": 100,
+        "max": 94,
+        "mean": 46.91,
+        "median": 44.0,
+        "min": 17,
+        "q1": 33.0,
+        "q3": 58.25
+      },
+      "identity_count": 100,
+      "pair_count": 100,
+      "source_view": "V01",
+      "target_view": "V02"
+    },
+    {
+      "all_target_visible_support_texels": {
+        "count": 100,
+        "max": 1333,
+        "mean": 1304.97,
+        "median": 1310.0,
+        "min": 1243,
+        "q1": 1292.75,
+        "q3": 1319.0
+      },
+      "direction": "V01→V03",
+      "direction_index": 1,
+      "fixed_hidden_support_threshold_counts": {
+        "1": 100,
+        "10": 76,
+        "20": 34,
+        "5": 96,
+        "50": 5
+      },
+      "h_over_a_ratio": {
+        "count": 100,
+        "max": 0.050037907505686124,
+        "mean": 0.014074798883059257,
+        "median": 0.011125228282718756,
+        "min": 0.001520912547528517,
+        "q1": 0.008132641017965101,
+        "q3": 0.017530610389701204
+      },
+      "hidden_support_texels": {
+        "count": 100,
+        "max": 66,
+        "mean": 18.43,
+        "median": 14.5,
+        "min": 2,
+        "q1": 10.75,
+        "q3": 23.0
+      },
+      "identity_count": 100,
+      "pair_count": 100,
+      "source_view": "V01",
+      "target_view": "V03"
+    },
+    {
+      "all_target_visible_support_texels": {
+        "count": 100,
+        "max": 1343,
+        "mean": 1296.17,
+        "median": 1298.5,
+        "min": 1238,
+        "q1": 1280.5,
+        "q3": 1310.0
+      },
+      "direction": "V01→V04",
+      "direction_index": 2,
+      "fixed_hidden_support_threshold_counts": {
+        "1": 100,
+        "10": 100,
+        "20": 98,
+        "5": 100,
+        "50": 35
+      },
+      "h_over_a_ratio": {
+        "count": 100,
+        "max": 0.07207890743550835,
+        "mean": 0.03590177180307103,
+        "median": 0.034161490683229816,
+        "min": 0.010093167701863354,
+        "q1": 0.02493208728260549,
+        "q3": 0.04506552666823546
+      },
+      "hidden_support_texels": {
+        "count": 100,
+        "max": 95,
+        "mean": 46.49,
+        "median": 44.0,
+        "min": 13,
+        "q1": 31.75,
+        "q3": 58.0
+      },
+      "identity_count": 100,
+      "pair_count": 100,
+      "source_view": "V01",
+      "target_view": "V04"
+    },
+    {
+      "all_target_visible_support_texels": {
+        "count": 100,
+        "max": 1339,
+        "mean": 1304.25,
+        "median": 1306.0,
+        "min": 1251,
+        "q1": 1293.75,
+        "q3": 1318.0
+      },
+      "direction": "V02→V01",
+      "direction_index": 3,
+      "fixed_hidden_support_threshold_counts": {
+        "1": 100,
+        "10": 99,
+        "20": 97,
+        "5": 100,
+        "50": 60
+      },
+      "h_over_a_ratio": {
+        "count": 100,
+        "max": 0.07565011820330969,
+        "mean": 0.041160749379778094,
+        "median": 0.0407694478846337,
+        "min": 0.007009345794392523,
+        "q1": 0.032482831040262755,
+        "q3": 0.04976200300627781
+      },
+      "hidden_support_texels": {
+        "count": 100,
+        "max": 97,
+        "mean": 53.66,
+        "median": 53.0,
+        "min": 9,
+        "q1": 42.0,
+        "q3": 65.25
+      },
+      "identity_count": 100,
+      "pair_count": 100,
+      "source_view": "V02",
+      "target_view": "V01"
+    },
+    {
+      "all_target_visible_support_texels": {
+        "count": 100,
+        "max": 1333,
+        "mean": 1304.97,
+        "median": 1310.0,
+        "min": 1243,
+        "q1": 1292.75,
+        "q3": 1319.0
+      },
+      "direction": "V02→V03",
+      "direction_index": 4,
+      "fixed_hidden_support_threshold_counts": {
+        "1": 100,
+        "10": 100,
+        "20": 97,
+        "5": 100,
+        "50": 60
+      },
+      "h_over_a_ratio": {
+        "count": 100,
+        "max": 0.07750188111361926,
+        "mean": 0.04140882095714613,
+        "median": 0.041392096614178045,
+        "min": 0.009324009324009324,
+        "q1": 0.032513514406596083,
+        "q3": 0.05135550453230012
+      },
+      "hidden_support_texels": {
+        "count": 100,
+        "max": 103,
+        "mean": 54.06,
+        "median": 54.0,
+        "min": 12,
+        "q1": 42.0,
+        "q3": 65.5
+      },
+      "identity_count": 100,
+      "pair_count": 100,
+      "source_view": "V02",
+      "target_view": "V03"
+    },
+    {
+      "all_target_visible_support_texels": {
+        "count": 100,
+        "max": 1343,
+        "mean": 1296.17,
+        "median": 1298.5,
+        "min": 1238,
+        "q1": 1280.5,
+        "q3": 1310.0
+      },
+      "direction": "V02→V04",
+      "direction_index": 5,
+      "fixed_hidden_support_threshold_counts": {
+        "1": 100,
+        "10": 67,
+        "20": 31,
+        "5": 91,
+        "50": 1
+      },
+      "h_over_a_ratio": {
+        "count": 100,
+        "max": 0.045906656465187455,
+        "mean": 0.012673568912744189,
+        "median": 0.010769237141560438,
+        "min": 0.00156128024980484,
+        "q1": 0.006164521677243342,
+        "q3": 0.016765114561955313
+      },
+      "hidden_support_texels": {
+        "count": 100,
+        "max": 60,
+        "mean": 16.51,
+        "median": 14.0,
+        "min": 2,
+        "q1": 8.0,
+        "q3": 22.0
+      },
+      "identity_count": 100,
+      "pair_count": 100,
+      "source_view": "V02",
+      "target_view": "V04"
+    },
+    {
+      "all_target_visible_support_texels": {
+        "count": 100,
+        "max": 1339,
+        "mean": 1304.25,
+        "median": 1306.0,
+        "min": 1251,
+        "q1": 1293.75,
+        "q3": 1318.0
+      },
+      "direction": "V03→V01",
+      "direction_index": 6,
+      "fixed_hidden_support_threshold_counts": {
+        "1": 100,
+        "10": 73,
+        "20": 33,
+        "5": 91,
+        "50": 2
+      },
+      "h_over_a_ratio": {
+        "count": 100,
+        "max": 0.04490106544901065,
+        "mean": 0.013531772975537069,
+        "median": 0.011833546424271837,
+        "min": 0.0015151515151515152,
+        "q1": 0.006207816612992303,
+        "q3": 0.018563205949394493
+      },
+      "hidden_support_texels": {
+        "count": 100,
+        "max": 59,
+        "mean": 17.71,
+        "median": 15.5,
+        "min": 2,
+        "q1": 8.0,
+        "q3": 24.25
+      },
+      "identity_count": 100,
+      "pair_count": 100,
+      "source_view": "V03",
+      "target_view": "V01"
+    },
+    {
+      "all_target_visible_support_texels": {
+        "count": 100,
+        "max": 1341,
+        "mean": 1297.5,
+        "median": 1298.0,
+        "min": 1251,
+        "q1": 1286.0,
+        "q3": 1310.25
+      },
+      "direction": "V03→V02",
+      "direction_index": 7,
+      "fixed_hidden_support_threshold_counts": {
+        "1": 100,
+        "10": 100,
+        "20": 100,
+        "5": 100,
+        "50": 40
+      },
+      "h_over_a_ratio": {
+        "count": 100,
+        "max": 0.06985573272589218,
+        "mean": 0.03589446931420353,
+        "median": 0.03374739886779501,
+        "min": 0.01583531274742676,
+        "q1": 0.025441519443168907,
+        "q3": 0.04377887943792881
+      },
+      "hidden_support_texels": {
+        "count": 100,
+        "max": 92,
+        "mean": 46.59,
+        "median": 43.5,
+        "min": 20,
+        "q1": 32.75,
+        "q3": 57.0
+      },
+      "identity_count": 100,
+      "pair_count": 100,
+      "source_view": "V03",
+      "target_view": "V02"
+    },
+    {
+      "all_target_visible_support_texels": {
+        "count": 100,
+        "max": 1343,
+        "mean": 1296.17,
+        "median": 1298.5,
+        "min": 1238,
+        "q1": 1280.5,
+        "q3": 1310.0
+      },
+      "direction": "V03→V04",
+      "direction_index": 8,
+      "fixed_hidden_support_threshold_counts": {
+        "1": 100,
+        "10": 100,
+        "20": 98,
+        "5": 100,
+        "50": 37
+      },
+      "h_over_a_ratio": {
+        "count": 100,
+        "max": 0.06964006259780908,
+        "mean": 0.035675500432192,
+        "median": 0.03389164350526432,
+        "min": 0.014084507042253521,
+        "q1": 0.025014279864702584,
+        "q3": 0.04300422474302252
+      },
+      "hidden_support_texels": {
+        "count": 100,
+        "max": 91,
+        "mean": 46.26,
+        "median": 44.0,
+        "min": 18,
+        "q1": 33.0,
+        "q3": 56.0
+      },
+      "identity_count": 100,
+      "pair_count": 100,
+      "source_view": "V03",
+      "target_view": "V04"
+    },
+    {
+      "all_target_visible_support_texels": {
+        "count": 100,
+        "max": 1339,
+        "mean": 1304.25,
+        "median": 1306.0,
+        "min": 1251,
+        "q1": 1293.75,
+        "q3": 1318.0
+      },
+      "direction": "V04→V01",
+      "direction_index": 9,
+      "fixed_hidden_support_threshold_counts": {
+        "1": 100,
+        "10": 100,
+        "20": 97,
+        "5": 100,
+        "50": 59
+      },
+      "h_over_a_ratio": {
+        "count": 100,
+        "max": 0.09450038729666925,
+        "mean": 0.04187014857830147,
+        "median": 0.04033132530120482,
+        "min": 0.00909090909090909,
+        "q1": 0.03023342352180173,
+        "q3": 0.05140589703959102
+      },
+      "hidden_support_texels": {
+        "count": 100,
+        "max": 122,
+        "mean": 54.57,
+        "median": 53.0,
+        "min": 12,
+        "q1": 39.75,
+        "q3": 67.0
+      },
+      "identity_count": 100,
+      "pair_count": 100,
+      "source_view": "V04",
+      "target_view": "V01"
+    },
+    {
+      "all_target_visible_support_texels": {
+        "count": 100,
+        "max": 1341,
+        "mean": 1297.5,
+        "median": 1298.0,
+        "min": 1251,
+        "q1": 1286.0,
+        "q3": 1310.25
+      },
+      "direction": "V04→V02",
+      "direction_index": 10,
+      "fixed_hidden_support_threshold_counts": {
+        "1": 100,
+        "10": 61,
+        "20": 34,
+        "5": 89,
+        "50": 4
+      },
+      "h_over_a_ratio": {
+        "count": 100,
+        "max": 0.049962714392244596,
+        "mean": 0.013697945155036377,
+        "median": 0.01068320825821839,
+        "min": 0.0007627765064836003,
+        "q1": 0.005412720498319927,
+        "q3": 0.01864441597989221
+      },
+      "hidden_support_texels": {
+        "count": 100,
+        "max": 67,
+        "mean": 17.84,
+        "median": 14.0,
+        "min": 1,
+        "q1": 7.0,
+        "q3": 24.0
+      },
+      "identity_count": 100,
+      "pair_count": 100,
+      "source_view": "V04",
+      "target_view": "V02"
+    },
+    {
+      "all_target_visible_support_texels": {
+        "count": 100,
+        "max": 1333,
+        "mean": 1304.97,
+        "median": 1310.0,
+        "min": 1243,
+        "q1": 1292.75,
+        "q3": 1319.0
+      },
+      "direction": "V04→V03",
+      "direction_index": 11,
+      "fixed_hidden_support_threshold_counts": {
+        "1": 100,
+        "10": 100,
+        "20": 97,
+        "5": 100,
+        "50": 59
+      },
+      "h_over_a_ratio": {
+        "count": 100,
+        "max": 0.0915915915915916,
+        "mean": 0.04217248474883891,
+        "median": 0.040075620095071145,
+        "min": 0.011252813203300824,
+        "q1": 0.031136269168184065,
+        "q3": 0.0517696541424008
+      },
+      "hidden_support_texels": {
+        "count": 100,
+        "max": 122,
+        "mean": 55.06,
+        "median": 52.5,
+        "min": 15,
+        "q1": 40.75,
+        "q3": 68.25
+      },
+      "identity_count": 100,
+      "pair_count": 100,
+      "source_view": "V04",
+      "target_view": "V03"
+    }
+  ],
+  "overall": {
+    "all_target_visible_support_texels": {
+      "count": 1200,
+      "max": 1343,
+      "mean": 1300.7225,
+      "median": 1302.5,
+      "min": 1238,
+      "q1": 1288.0,
+      "q3": 1316.0
+    },
+    "direction_count": 12,
+    "fixed_hidden_support_threshold_counts": {
+      "1": 1200,
+      "10": 1076,
+      "20": 912,
+      "5": 1167,
+      "50": 403
+    },
+    "h_over_a_ratio": {
+      "count": 1200,
+      "max": 0.09450038729666925,
+      "mean": 0.030353049158269006,
+      "median": 0.029110954291090972,
+      "min": 0.0007627765064836003,
+      "q1": 0.015786825853382775,
+      "q3": 0.042821644918329675
+    },
+    "hidden_support_texels": {
+      "count": 1200,
+      "max": 122,
+      "mean": 39.5075,
+      "median": 38.0,
+      "min": 1,
+      "q1": 20.75,
+      "q3": 56.0
+    },
+    "identity_count": 100,
+    "pair_count": 1200
+  },
+  "schema_version": "frugalface3d.v15.realy_ha_distribution.v1"
+}

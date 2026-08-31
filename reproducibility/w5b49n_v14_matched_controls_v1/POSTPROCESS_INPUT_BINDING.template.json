@@ -1,0 +1,28 @@
+{
+  "d1_b_lite_route_root": "/absolute/path/stage13/routes/b_lite__aligned",
+  "d1_eval_cache": "/absolute/path/FACESCAPE_EVAL_CACHE",
+  "d1_lama_root": "/absolute/path/normalized_batches/D1/lama",
+  "d1_v14_raw_root": "/absolute/path/V14_D1_RAW",
+  "d1_zits_root": "/absolute/path/normalized_batches/D1/zits",
+  "d2_b_lite_route_root": "/absolute/path/stage15/routes/b_lite__aligned",
+  "d2_eval_cache": "/absolute/path/REALY_EVAL_CACHE",
+  "d2_lama_root": "/absolute/path/normalized_batches/D2/lama",
+  "d2_roster_root": "/absolute/path/REALY_PAIR_ROSTER_ROOT",
+  "d2_v14_raw_root": "/absolute/path/V14_D2_RAW",
+  "d2_zits_root": "/absolute/path/normalized_batches/D2/zits",
+  "evaluator_assets": "/absolute/path/evaluator_portable_source",
+  "freeuv_archive": {
+    "path": "/absolute/path/W5B49N_FREEUV_D1D2_20260820V12_PRIVATE_RESULTS_V1_2.tar.gz",
+    "sha256": "25e26864d5cf6429171faf76c3575944a7f860315e3835b32adbe7f5710e418c"
+  },
+  "freeuv_root": "/absolute/path/W5B49N_FREEUV_D1D2_20260820V12",
+  "freeuv_safe_sample_map": {
+    "path": "/absolute/path/safe_sample_map.v1.json",
+    "sha256": "ba64333dc39daafdfb45a13363705fb4cf8e716d4cc6901c352e744b78dcbeb2"
+  },
+  "output_root": "/absolute/new/path/V14_POSTPROCESS",
+  "qualification_root": "/absolute/new/path/V14_EVALUATOR_QUALIFICATION",
+  "schema_version": "frugalface3d.w5b49n.v14.postprocess_input_binding.v1",
+  "status": "PENDING_DO_NOT_EXECUTE",
+  "training_terminal": "/absolute/path/V14_TRAINING/TRAINING_TERMINAL.json"
+}

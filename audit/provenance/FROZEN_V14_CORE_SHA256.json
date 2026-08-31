@@ -1,0 +1,26 @@
+{
+  "schema_version": "frugalface3d.v15.frozen_v14_core.v1",
+  "baseline_archive": {
+    "filename": "anonymous_evaluation_package_v14_p0_auditable.tar.gz",
+    "sha256": "7c0a34adbe3756da9182bb06ab64f7b43315b567818d3ff1eb709375d7c3b131"
+  },
+  "core_file_count": 16,
+  "files": {
+    "protocol/STATISTICAL_ANALYSIS_PLAN.md": "199a52e0333550b0a01e91c6509ca7a14e79dc56b5dca9abda13f50c1c8b045e",
+    "provenance/ANALYSIS_BINDING_RECEIPT.json": "44cde1fb94b0896c395ec87a33677ff8621bb6b9b541f7c0175d330eee8cb1c2",
+    "provenance/SAP.sha256": "0cce8bae99594c440fc29197d0d5cffac68f1853db6a007ee076ce4b27e32ebc",
+    "provenance/SOURCE_ARCHIVE.sha256": "9db1a37bd015bb110d2387965a1d3fa365a0ff950b40b628c0c94f19d2fa61f6",
+    "requirements.txt": "c874e7a2e937e4b67f22f671b7fa02a822ea8dd005cc5ba3b10f6c5bd5a944ec",
+    "robustness/FACESCAPE_SFACE_COVERAGE_SENSITIVITY.csv": "c3cc4cd9a2c9553fb1c7f233f7f7f017ca002566a2cd2a6216b2515a4f6c9656",
+    "robustness/REALY_H_SUPPORT_SENSITIVITY.csv": "f615997ea03fab817170768da58ec0687972a3ad63091c3a66f921d2d368006d",
+    "statistics/ANALYSIS_RESULTS.json": "0f49cadf18857eefafae50bae9ce4afca73bb1c6606c16bc19dfb2e9b721e1c3",
+    "statistics/ANALYSIS_TERMINAL.json": "74c789a5fa5f920303a9700a379d8fab82a5b0238e5625bcf2d7ca71a706885c",
+    "statistics/CLAIM_GATE_RESULTS.json": "a427681d8dd7563681bb38c4c530e9a75d9da7d78a39f7f824ef8ff6f7e650dc",
+    "statistics/FAMILY_RESULTS.csv": "bb051eaa8e45c224d8d46614f07020d8c5958f104a52e0c43659f0f83416e4b7",
+    "statistics/IDENTITY_EFFECTS.csv": "a28342075ea362adc0359ad2d593dcac008fc2988f21024132ae4deb353bf2ed",
+    "statistics/IDENTITY_EFFECTS.jsonl": "93c1672ab4e25629d080a04df9b6c7c9a7a67557e552e16c20b425f8a886fa91",
+    "statistics/METRIC_COVERAGE.json": "cdb56787b960b48772376df5abcf0544450ae9498681ac7577c100842888caa1",
+    "statistics/SEED_RESULTS.csv": "4293096a6774f46cc439b62a404f87f59d12f7f51fc96939054f24221213fb62",
+    "statistics/recompute_public_statistics.py": "c9987c189b3502eeffa7363d0b26ed23c7c0d967a38c48b1c98636455ebe8fa4"
+  }
+}

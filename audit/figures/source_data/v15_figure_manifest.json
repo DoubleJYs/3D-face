@@ -1,0 +1,87 @@
+{
+  "active_manuscript_mapping": {
+    "Figure 1": "v15_model_architecture_zh.png",
+    "Figure 2": "v15_visibility_region_evaluation_zh.png",
+    "Figure 3": "v15_output_form_comparison_zh.png",
+    "Figure 4": "v15_multimetric_effects_zh.png",
+    "Figure 5": "v15_quality_resource_bubbles_zh.png",
+    "Supplementary Figure S1": "v15_realy_support_sensitivity_zh.png",
+    "Supplementary Figure S2": "v15_realy_12direction_effects_zh.png",
+    "Supplementary Figure S3": "v15_descriptive_multimetric_panorama_zh.png"
+  },
+  "active_renderers": {
+    "additional": {
+      "file": "figures/scripts/make_v15_additional_figures.py",
+      "sha256": "e826c19268f71be9852f65a1d4a1456712ba5328555891771f0b50e038406c28"
+    },
+    "entry_point": {
+      "file": "figures/scripts/rebuild_public_figures.py",
+      "sha256": "8ba737b05caec24dc5b01dae4f307320b12a6a5e0d6d8e9e0e879df182a3ed7f"
+    },
+    "main": {
+      "file": "figures/scripts/make_v15_figures.py",
+      "sha256": "995f01adc106ef288443bddcf41044329235ba86c669fc9afe5cf317adf80cfe"
+    },
+    "robustness": {
+      "file": "figures/scripts/make_v15_robustness_figure.py",
+      "sha256": "eb8de01b393a76604269e9b33d36540307b9284f87098d82f8f8c350c527ad71"
+    }
+  },
+  "asset_sha256": {
+    "v15_descriptive_multimetric_panorama_zh.png": "0c6c9e1f7646b3275092e707165cd0e94042cb437a00b2825c5f5cdaa0c9000f",
+    "v15_model_architecture_zh.png": "3b36861e77ab67083a1ab782c126f563f626e35d3f9d78c38f036aec84827330",
+    "v15_multimetric_effects_zh.pdf": "cfb6bfb024c04e4c9edc60c5e8096747dbe20cdc4eb93175a0abdbf03be047e7",
+    "v15_multimetric_effects_zh.png": "dabb8da3bbe04ef67207fe591fab815eb5e177013e872e4f3d35f752b1f3defb",
+    "v15_multimetric_effects_zh.svg": "45bc43970e50880c442533df68c96aca8654cf003047b05619be9644e83cc7c5",
+    "v15_multimetric_effects_zh.tiff": "98fc9daf30421a3237ab5079cffbb14cfe2aeb568e593c944603a566127deb12",
+    "v15_output_form_comparison_zh.png": "6fb2f630392011cd845a6d0466127aceab16d8794563023978a458c57a891995",
+    "v15_quality_resource_bubbles_zh.png": "666bedd6ae241e96713b7af331af04a9014f2782bcd7ccf1b87c42e6cf664ad3",
+    "v15_realy_12direction_effects_zh.png": "706a92257404fce9ca9107502e0334a4cd4f9105cae839afb7550e75108d5bea",
+    "v15_realy_support_sensitivity_zh.png": "80ec043d3af4c4a1b658c63ed0f9872ff62596354f717bbd5d8ec1a8726de08a",
+    "v15_visibility_region_evaluation_zh.pdf": "80ec5a4eb5cfd5d0e583f6346e1d3149f690457865241a9df6f61ab980cc0ca0",
+    "v15_visibility_region_evaluation_zh.png": "4ffcbd9babf6bc67dbd1662322eb739ff8a4ae81d57d8520cbc95cad6c1e7b86",
+    "v15_visibility_region_evaluation_zh.svg": "ddad86396f94fa93a22284e207055a955788267ed57059a5f99e8db5345526f9",
+    "v15_visibility_region_evaluation_zh.tiff": "b6e1fcce1e74905710a2186aed8bf860942689c3e413e5bf3787df46ad4f0d15"
+  },
+  "backend": "python_matplotlib_only",
+  "directional_analysis": {
+    "comparison_count": 3,
+    "direction_count": 12,
+    "enters_confirmatory_holm_families": false,
+    "identity_effect_rows": 3600,
+    "new_p_values": false,
+    "summary_rows": 36
+  },
+  "display_scope": "current V15 reader layer; frozen statistical values unchanged",
+  "licensed_face_items_excluded": {
+    "Figure 6": "not redistributed",
+    "Supplementary Figure S4": "not redistributed"
+  },
+  "public_nonface_rebuildable_figure_count": 8,
+  "robustness_source_sha256": {
+    "robustness/REALY_H_SUPPORT_SENSITIVITY.csv": "f615997ea03fab817170768da58ec0687972a3ad63091c3a66f921d2d368006d"
+  },
+  "schema_version": "frugalface3d.v15.figure_manifest.v5",
+  "source_sha256": {
+    "v15_descriptive_multimetric_panorama.csv": "d3f444eef83fd7fb08b8565cd2d510a3bb4c06c4fcef473a4ab71950d7dcb8a4",
+    "v15_multimetric_effects.csv": "9ae7645d043d8f068fc2c9064c7fcd7067dec572f0603319bd4b2a074820bab9",
+    "v15_output_form_effects.csv": "b35383a38a13c22667bfb9ca0148e741a47f7da213762b89940c8f356be6d81b",
+    "v15_quality_resource_bubbles.csv": "4db5656d43155466711a135add4b2cee72d1df9a7a8eaf592eb4dbe8534b9e73",
+    "v15_realy_12direction_effects.csv": "885a2895377a24c28d21f7f4de417b9fa871fa2477c9882908e5ada99fe7f30a",
+    "v15_visibility_region_compression.csv": "a592bb3ba392f340c59151dbbf0af359f2c10b32528436e1a8c1bb49212e3d1c"
+  },
+  "statistical_boundary": {
+    "confidence_intervals": "95% identity bootstrap, not multiplicity adjusted",
+    "confirmatory_tests": "frozen two-sided exact sign tests with Holm within four prespecified families",
+    "directional_analysis": "exploratory descriptive analysis; no new p-values",
+    "h_to_a": "prespecified descriptive decomposition; no new p-values"
+  },
+  "status": "PASS_V15_PUBLIC_NONFACE_FIGURES_SYNCHRONIZED",
+  "v14_archive": {
+    "analysis_status": "PASS_V14_MATCHED_CONTROLS_ANALYSIS_COMPLETE",
+    "completion_status": "PASS_V14_EXPERIMENT_ANALYSIS_PROVENANCE_COMPLETE",
+    "filename": "W5B49N_V14_MATCHED_CONTROLS_20260821A_FINAL_RESULTS_V1.tar.gz",
+    "provenance_status": "PASS_V14_PROVENANCE_CHAIN_COMPLETE_V1_2",
+    "sha256": "41d62c40ec3c7959c91eeb896da3a9895128734479413ab42377b2425312e665"
+  }
+}

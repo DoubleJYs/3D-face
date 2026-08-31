@@ -1,0 +1,515 @@
+{
+  "aggregation": {
+    "identity_to_overall": "median",
+    "pair_to_identity": "median",
+    "seed_to_identity": "median",
+    "zero_effect_handling": "exclude_from_effective_sign_count"
+  },
+  "analysis_unit": "identity",
+  "contract_id": "W5B49N_V14_MATCHED_CONTROLS_V1",
+  "contract_mode": "production",
+  "datasets": {
+    "D1": {
+      "expected_analysis_pair_count": 148,
+      "expected_identity_count": 20,
+      "expected_total_pair_count": 160,
+      "name": "FaceScape",
+      "sface_min_identity_count": 18
+    },
+    "D2": {
+      "expected_analysis_pair_count": 1200,
+      "expected_identity_count": 100,
+      "expected_total_pair_count": 1200,
+      "name": "REALY",
+      "sface_min_identity_count": 90
+    }
+  },
+  "fail_closed": {
+    "create_output_only_after_all_checks": true,
+    "reject_duplicate_metric_rows": true,
+    "reject_existing_output_root": true,
+    "reject_hash_mismatch": true,
+    "reject_incomplete_terminal": true,
+    "reject_missing_or_extra_metric_rows": true,
+    "reject_nonfinite_or_out_of_range_values": true
+  },
+  "families": [
+    {
+      "family_id": "F1-MAE-ATTRIBUTION",
+      "members": [
+        {
+          "comparator_id": "condition0",
+          "dataset_id": "D1"
+        },
+        {
+          "comparator_id": "b_lite_ft",
+          "dataset_id": "D1"
+        },
+        {
+          "comparator_id": "condition0",
+          "dataset_id": "D2"
+        },
+        {
+          "comparator_id": "b_lite_ft",
+          "dataset_id": "D2"
+        }
+      ],
+      "metric_id": "hidden_uv_mae"
+    },
+    {
+      "family_id": "F2-MAE-PUBLIC",
+      "members": [
+        {
+          "comparator_id": "freeuv_conserved",
+          "dataset_id": "D1"
+        },
+        {
+          "comparator_id": "freeuv_conserved",
+          "dataset_id": "D2"
+        }
+      ],
+      "metric_id": "hidden_uv_mae"
+    },
+    {
+      "family_id": "F3-LPIPS",
+      "members": [
+        {
+          "comparator_id": "condition0",
+          "dataset_id": "D1"
+        },
+        {
+          "comparator_id": "b_lite_ft",
+          "dataset_id": "D1"
+        },
+        {
+          "comparator_id": "freeuv_conserved",
+          "dataset_id": "D1"
+        },
+        {
+          "comparator_id": "condition0",
+          "dataset_id": "D2"
+        },
+        {
+          "comparator_id": "b_lite_ft",
+          "dataset_id": "D2"
+        },
+        {
+          "comparator_id": "freeuv_conserved",
+          "dataset_id": "D2"
+        }
+      ],
+      "metric_id": "lpips_alex_v0_1"
+    },
+    {
+      "family_id": "F4-SFACE",
+      "members": [
+        {
+          "comparator_id": "condition0",
+          "dataset_id": "D1"
+        },
+        {
+          "comparator_id": "b_lite_ft",
+          "dataset_id": "D1"
+        },
+        {
+          "comparator_id": "freeuv_conserved",
+          "dataset_id": "D1"
+        },
+        {
+          "comparator_id": "condition0",
+          "dataset_id": "D2"
+        },
+        {
+          "comparator_id": "b_lite_ft",
+          "dataset_id": "D2"
+        },
+        {
+          "comparator_id": "freeuv_conserved",
+          "dataset_id": "D2"
+        }
+      ],
+      "metric_id": "sface_source_to_render_cosine"
+    }
+  ],
+  "inference": {
+    "bootstrap": {
+      "base_seed": 20260816,
+      "confidence_level": 0.95,
+      "method": "percentile",
+      "resamples": 10000,
+      "unit": "identity"
+    },
+    "familywise_alpha": 0.05,
+    "multiple_comparison": "holm_within_each_prespecified_family",
+    "sign_test": "two_sided_exact_binomial_p_0_5"
+  },
+  "matched_training": {
+    "cross_terminal_equal_hash_fields": [
+      "environment_manifest_sha256",
+      "training_split_sha256",
+      "training_budget_manifest_sha256"
+    ],
+    "device_backend": "cuda",
+    "device_name": "NVIDIA GeForce RTX 4090",
+    "per_terminal_unique_hash_field": "checkpoint_sha256",
+    "steps_per_unit": 512,
+    "total_steps": 7680,
+    "training_units": 15
+  },
+  "methods": {
+    "b_lite_ft": {
+      "seed_mode": "five_fixed_seeds"
+    },
+    "condition0": {
+      "seed_mode": "five_fixed_seeds"
+    },
+    "freeuv_conserved": {
+      "seed_mode": "single_frozen_output"
+    },
+    "full": {
+      "seed_mode": "five_fixed_seeds"
+    }
+  },
+  "metrics": {
+    "hidden_uv_mae": {
+      "direction": "lower_is_better",
+      "maximum": 1.0,
+      "minimum": 0.0
+    },
+    "lpips_alex_v0_1": {
+      "direction": "lower_is_better",
+      "maximum": null,
+      "minimum": 0.0
+    },
+    "sface_source_to_render_cosine": {
+      "direction": "higher_is_better",
+      "maximum": 1.0,
+      "minimum": -1.0
+    }
+  },
+  "required_artifacts": {
+    "analysis_program": {
+      "kind": "analysis_program",
+      "required_basename": "analyze_v14_matched_controls.py"
+    },
+    "b_lite_frozen_terminal": {
+      "kind": "json_terminal",
+      "require_bound_files": true,
+      "required_fields": {
+        "method_id": "b_lite",
+        "schema_version": "frugalface3d.w5b49n.v14.terminal.v1",
+        "status": "PASS_V14_B_LITE_FROZEN_BOUND"
+      }
+    },
+    "b_lite_ft_seed_2026080447_terminal": {
+      "kind": "json_terminal",
+      "require_bound_files": true,
+      "required_fields": {
+        "method_id": "b_lite_ft",
+        "schema_version": "frugalface3d.w5b49n.v14.terminal.v1",
+        "seed": 2026080447,
+        "status": "PASS_V14_B_LITE_FT_SEED_COMPLETE"
+      }
+    },
+    "b_lite_ft_seed_2026080448_terminal": {
+      "kind": "json_terminal",
+      "require_bound_files": true,
+      "required_fields": {
+        "method_id": "b_lite_ft",
+        "schema_version": "frugalface3d.w5b49n.v14.terminal.v1",
+        "seed": 2026080448,
+        "status": "PASS_V14_B_LITE_FT_SEED_COMPLETE"
+      }
+    },
+    "b_lite_ft_seed_2026080449_terminal": {
+      "kind": "json_terminal",
+      "require_bound_files": true,
+      "required_fields": {
+        "method_id": "b_lite_ft",
+        "schema_version": "frugalface3d.w5b49n.v14.terminal.v1",
+        "seed": 2026080449,
+        "status": "PASS_V14_B_LITE_FT_SEED_COMPLETE"
+      }
+    },
+    "b_lite_ft_seed_2026080450_terminal": {
+      "kind": "json_terminal",
+      "require_bound_files": true,
+      "required_fields": {
+        "method_id": "b_lite_ft",
+        "schema_version": "frugalface3d.w5b49n.v14.terminal.v1",
+        "seed": 2026080450,
+        "status": "PASS_V14_B_LITE_FT_SEED_COMPLETE"
+      }
+    },
+    "b_lite_ft_seed_2026080451_terminal": {
+      "kind": "json_terminal",
+      "require_bound_files": true,
+      "required_fields": {
+        "method_id": "b_lite_ft",
+        "schema_version": "frugalface3d.w5b49n.v14.terminal.v1",
+        "seed": 2026080451,
+        "status": "PASS_V14_B_LITE_FT_SEED_COMPLETE"
+      }
+    },
+    "claim_decision_matrix": {
+      "kind": "text_file",
+      "required_basename": "V14_CLAIM_DECISION_MATRIX.md",
+      "required_markers": [
+        "V14 主张判定矩阵",
+        "五个预定随机种子"
+      ]
+    },
+    "condition0_seed_2026080447_terminal": {
+      "kind": "json_terminal",
+      "require_bound_files": true,
+      "required_fields": {
+        "method_id": "condition0",
+        "schema_version": "frugalface3d.w5b49n.v14.terminal.v1",
+        "seed": 2026080447,
+        "status": "PASS_V14_CONDITION0_SEED_COMPLETE"
+      }
+    },
+    "condition0_seed_2026080448_terminal": {
+      "kind": "json_terminal",
+      "require_bound_files": true,
+      "required_fields": {
+        "method_id": "condition0",
+        "schema_version": "frugalface3d.w5b49n.v14.terminal.v1",
+        "seed": 2026080448,
+        "status": "PASS_V14_CONDITION0_SEED_COMPLETE"
+      }
+    },
+    "condition0_seed_2026080449_terminal": {
+      "kind": "json_terminal",
+      "require_bound_files": true,
+      "required_fields": {
+        "method_id": "condition0",
+        "schema_version": "frugalface3d.w5b49n.v14.terminal.v1",
+        "seed": 2026080449,
+        "status": "PASS_V14_CONDITION0_SEED_COMPLETE"
+      }
+    },
+    "condition0_seed_2026080450_terminal": {
+      "kind": "json_terminal",
+      "require_bound_files": true,
+      "required_fields": {
+        "method_id": "condition0",
+        "schema_version": "frugalface3d.w5b49n.v14.terminal.v1",
+        "seed": 2026080450,
+        "status": "PASS_V14_CONDITION0_SEED_COMPLETE"
+      }
+    },
+    "condition0_seed_2026080451_terminal": {
+      "kind": "json_terminal",
+      "require_bound_files": true,
+      "required_fields": {
+        "method_id": "condition0",
+        "schema_version": "frugalface3d.w5b49n.v14.terminal.v1",
+        "seed": 2026080451,
+        "status": "PASS_V14_CONDITION0_SEED_COMPLETE"
+      }
+    },
+    "d1_eval_cache_terminal": {
+      "kind": "json_terminal",
+      "require_bound_files": true,
+      "required_fields": {
+        "analysis_pair_count": 148,
+        "dataset_id": "D1",
+        "schema_version": "frugalface3d.w5b49n.v14.terminal.v1",
+        "status": "PASS_V14_EVAL_CACHE_COMPLETE"
+      }
+    },
+    "d2_eval_cache_terminal": {
+      "kind": "json_terminal",
+      "require_bound_files": true,
+      "required_fields": {
+        "analysis_pair_count": 1200,
+        "dataset_id": "D2",
+        "schema_version": "frugalface3d.w5b49n.v14.terminal.v1",
+        "status": "PASS_V14_EVAL_CACHE_COMPLETE"
+      }
+    },
+    "freeuv_v1_2_terminal": {
+      "kind": "json_terminal",
+      "require_bound_files": true,
+      "required_bound_sha256": [
+        "25e26864d5cf6429171faf76c3575944a7f860315e3835b32adbe7f5710e418c",
+        "3f25312879e395676aeac32c5ee3a1d1b08bb3db3703bb34ac73a28a0ee02ff0",
+        "60d6ad02174cbdae1ea466e5a94e1f7b456fc7537aa11c91d10235f05a67e430",
+        "ba64333dc39daafdfb45a13363705fb4cf8e716d4cc6901c352e744b78dcbeb2",
+        "f701dd3931c995de947e732838ad6acdaf2ae1665aeb633cc746df08b02b4357",
+        "63008d05585994d0ec2e7830e8739a61ce4b38897b2bb3c495a19dd9b2e0c616"
+      ],
+      "required_fields": {
+        "forward_count": 560,
+        "method_id": "freeuv_conserved",
+        "no_new_inference": true,
+        "schema_version": "frugalface3d.w5b49n.v14.terminal.v1",
+        "source_package_sha256": "25e26864d5cf6429171faf76c3575944a7f860315e3835b32adbe7f5710e418c",
+        "status": "PASS_V14_FREEUV_V1_2_COMPLETE"
+      }
+    },
+    "full_seed_2026080447_terminal": {
+      "kind": "json_terminal",
+      "require_bound_files": true,
+      "required_fields": {
+        "method_id": "full",
+        "schema_version": "frugalface3d.w5b49n.v14.terminal.v1",
+        "seed": 2026080447,
+        "status": "PASS_V14_FULL_SEED_COMPLETE"
+      }
+    },
+    "full_seed_2026080448_terminal": {
+      "kind": "json_terminal",
+      "require_bound_files": true,
+      "required_fields": {
+        "method_id": "full",
+        "schema_version": "frugalface3d.w5b49n.v14.terminal.v1",
+        "seed": 2026080448,
+        "status": "PASS_V14_FULL_SEED_COMPLETE"
+      }
+    },
+    "full_seed_2026080449_terminal": {
+      "kind": "json_terminal",
+      "require_bound_files": true,
+      "required_fields": {
+        "method_id": "full",
+        "schema_version": "frugalface3d.w5b49n.v14.terminal.v1",
+        "seed": 2026080449,
+        "status": "PASS_V14_FULL_SEED_COMPLETE"
+      }
+    },
+    "full_seed_2026080450_terminal": {
+      "kind": "json_terminal",
+      "require_bound_files": true,
+      "required_fields": {
+        "method_id": "full",
+        "schema_version": "frugalface3d.w5b49n.v14.terminal.v1",
+        "seed": 2026080450,
+        "status": "PASS_V14_FULL_SEED_COMPLETE"
+      }
+    },
+    "full_seed_2026080451_terminal": {
+      "kind": "json_terminal",
+      "require_bound_files": true,
+      "required_fields": {
+        "method_id": "full",
+        "schema_version": "frugalface3d.w5b49n.v14.terminal.v1",
+        "seed": 2026080451,
+        "status": "PASS_V14_FULL_SEED_COMPLETE"
+      }
+    },
+    "lpips_linux_qualification_terminal": {
+      "kind": "json_terminal",
+      "require_bound_files": true,
+      "required_fields": {
+        "cuda_calls": 0,
+        "device_backend": "cpu",
+        "fresh_output_root": true,
+        "metric_id": "lpips_alex_v0_1",
+        "operating_system": "linux",
+        "prior_method_failure_reused": false,
+        "probe_status": "PASS",
+        "probe_tolerance_abs": 1e-06,
+        "schema_version": "frugalface3d.w5b49n.v14.terminal.v1",
+        "status": "PASS_V14_LPIPS_LINUX_QUALIFIED"
+      }
+    },
+    "lpips_terminal": {
+      "kind": "json_terminal",
+      "require_bound_files": true,
+      "required_fields": {
+        "analysis_pair_count": 1348,
+        "cuda_calls": 0,
+        "device_backend": "cpu",
+        "metric_id": "lpips_alex_v0_1",
+        "qualification_required": true,
+        "schema_version": "frugalface3d.w5b49n.v14.terminal.v1",
+        "status": "PASS_V14_LPIPS_COMPLETE"
+      }
+    },
+    "sface_linux_qualification_terminal": {
+      "kind": "json_terminal",
+      "require_bound_files": true,
+      "required_fields": {
+        "cuda_calls": 0,
+        "device_backend": "cpu",
+        "fresh_output_root": true,
+        "metric_id": "sface_source_to_render_cosine",
+        "operating_system": "linux",
+        "prior_method_failure_reused": false,
+        "probe_status": "PASS",
+        "probe_tolerance_abs": 1e-06,
+        "schema_version": "frugalface3d.w5b49n.v14.terminal.v1",
+        "status": "PASS_V14_SFACE_LINUX_QUALIFIED"
+      }
+    },
+    "sface_terminal": {
+      "kind": "json_terminal",
+      "require_bound_files": true,
+      "required_fields": {
+        "analysis_pair_count": 1348,
+        "cuda_calls": 0,
+        "device_backend": "cpu",
+        "failure_ledger_complete": true,
+        "metric_id": "sface_source_to_render_cosine",
+        "qualification_required": true,
+        "schema_version": "frugalface3d.w5b49n.v14.terminal.v1",
+        "silent_row_drop_count": 0,
+        "status": "PASS_V14_SFACE_COMPLETE"
+      }
+    },
+    "shared_render_terminal": {
+      "kind": "json_terminal",
+      "require_bound_files": true,
+      "required_fields": {
+        "analysis_pair_count": 1348,
+        "schema_version": "frugalface3d.w5b49n.v14.terminal.v1",
+        "status": "PASS_V14_SHARED_RENDER_COMPLETE"
+      }
+    },
+    "statistical_analysis_plan": {
+      "kind": "text_file",
+      "required_basename": "STATISTICAL_ANALYSIS_PLAN.md",
+      "required_markers": [
+        "V14-SAP-1.5",
+        "RTX 4090/CUDA",
+        "7,680 步",
+        "10,000 次"
+      ]
+    }
+  },
+  "schema_version": "frugalface3d.w5b49n.v14.analysis_contract.v1",
+  "seed_notes": {
+    "b_lite_ft_required": [
+      2026080447,
+      2026080448,
+      2026080449,
+      2026080450,
+      2026080451
+    ],
+    "condition0_required": [
+      2026080447,
+      2026080448,
+      2026080449,
+      2026080450,
+      2026080451
+    ],
+    "full_cuda_retrain_required": [
+      2026080447,
+      2026080448,
+      2026080449,
+      2026080450,
+      2026080451
+    ],
+    "historical_mps_full_2026080447_to_2026080449": "excluded_from_confirmatory_families"
+  },
+  "seeds": [
+    2026080447,
+    2026080448,
+    2026080449,
+    2026080450,
+    2026080451
+  ],
+  "status": "FROZEN_BEFORE_NEW_METRIC_REVIEW"
+}

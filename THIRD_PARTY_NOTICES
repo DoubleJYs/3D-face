@@ -1,0 +1,50 @@
+FrugalFace3D-Lite third-party notices
+
+1. Bytes included in this source package
+
+No third-party source code, binary library, dataset, portrait, pretrained
+weight, model checkpoint, or canonical-mask asset is included. The source
+files identified as ORIGINAL_APACHE_2_0 in PAYLOAD_RIGHTS_MANIFEST.json are
+licensed by the joint copyright holders under Apache-2.0.
+
+2. External runtime dependencies not included
+
+The optional execution paths refer to Python, NumPy, SciPy, PyTorch, Pillow,
+OpenCV, LPIPS, and the OpenCV SFace/YuNet models. These products are not copied into
+this archive. A user who executes those paths must obtain the exact versions
+from their official projects and comply with each upstream license. Package
+requirements and runtime fingerprints identify the versions used by the
+reported experiments; they do not redistribute upstream bytes.
+
+Official project routes:
+
+- Python: https://www.python.org/
+- NumPy: https://numpy.org/
+- SciPy: https://scipy.org/
+- PyTorch: https://pytorch.org/
+- Pillow: https://python-pillow.org/
+- OpenCV and OpenCV Zoo: https://opencv.org/ and
+  https://github.com/opencv/opencv_zoo
+- LPIPS: https://github.com/richzhang/PerceptualSimilarity
+
+3. External datasets, models, and assets not included
+
+FFHQ, FaceScape, the REALY benchmark, DECA, FLAME, SMIRK, FreeUV, LaMa, ZITS,
+all evaluation assets, and all author-trained or third-party weights remain
+outside this archive. Users must apply to or download from the respective
+official provider and comply with the provider's terms. The package does not
+grant access, sublicense, or redistribution rights for any of them.
+
+The project records official acquisition routes, locked versions or commits,
+and author-held file hashes where useful for provenance. A hash or acquisition
+instruction is not a license and does not place the referenced bytes under
+Apache-2.0.
+
+4. Compatibility and attribution boundary
+
+The minimum payload excludes the historical FaceScape align_deca adapter,
+FG2018 compatibility implementation, manuscript sources, figures, and broad
+historical experiment tree. If a future release adds upstream-derived source,
+the release must first add the upstream copyright notice, exact license text,
+official URL, and locked version or commit, and classify that file separately
+in PAYLOAD_RIGHTS_MANIFEST.json.

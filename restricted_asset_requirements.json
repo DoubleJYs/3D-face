@@ -1,0 +1,35 @@
+{
+  "assets_in_public_package": false,
+  "distribution_policy": {
+    "author_trained_checkpoints": "NO_REDISTRIBUTION",
+    "mcanon": "OFFICIAL_ACQUISITION_ROUTE_ONLY",
+    "provider_data": "NO_REDISTRIBUTION",
+    "source_portraits": "NO_REDISTRIBUTION",
+    "third_party_weights_and_assets": "OFFICIAL_ACQUISITION_ROUTE_ONLY"
+  },
+  "logical_asset_root": "RESTRICTED_ASSET_ROOT",
+  "probe": {
+    "asset_directory_name": "restricted_assets",
+    "missing_assets_exit_code": 2,
+    "missing_assets_status": "RESTRICTED_ASSETS_EXPECTED_ABSENT"
+  },
+  "provenance_bindings": [
+    {
+      "expected_in_public_package": false,
+      "id": "MCANON",
+      "sha256": "a5069d8ffaf020008ae92d5062c4e98600f723aac4eb869731f190e4630467b5"
+    },
+    {
+      "expected_in_public_package": false,
+      "id": "B_LITE_INITIALIZATION",
+      "sha256": "2e7799205711a3bb0c809e47ea916e75e8e164dc1d4260f0fd97a8f2f1ac5da9"
+    },
+    {
+      "expected_in_public_package": false,
+      "id": "EXPRESSION_AUXILIARY_WEIGHT",
+      "sha256": "9309a1f6ea9f98392ea0d57474fbb53024c0a67e4a1d22db1d3e3cbcefafedcc"
+    }
+  ],
+  "schema_version": "frugalface3d.v15.restricted_assets.v2",
+  "status": "RESTRICTED_ASSETS_EXPECTED_ABSENT"
+}

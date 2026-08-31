@@ -1,0 +1,53 @@
+{
+  "schema_version": "frugalface3d.v15.realy_directional.public_binding.v1",
+  "status": "PASS_PATH_FREE_BINDING_TO_FROZEN_RESULTS",
+  "analysis_scope": "exploratory_REALY_12_directed_view_pairs_hidden_uv_mae",
+  "locked_at_utc": "2026-08-23T01:25:31Z",
+  "plan_locked_before_method_effect_read": true,
+  "analysis_plan_sha256": "7173b0bdb3eaca880130d6b43411e38c757b288415d03a120717ba8d1f263925",
+  "private_source_record_sha256": "fa6687abdb2b9523f01141e68a2f26e9db87da71914e626d21d471d1ad9e81ba",
+  "formal_archive": {
+    "bytes": 1331140530,
+    "sha256": "41d62c40ec3c7959c91eeb896da3a9895128734479413ab42377b2425312e665"
+  },
+  "upstream_content_sha256": {
+    "formal_control_record": "3b906b947c8afacf6780f66b6370286455c5b021c85d33ff92cb1d2f01b6aa8f",
+    "formal_pair_roster": "e6731fc8843bf863a67cbec28182ebdb68e6b7d2d1ab2e479775d3f5b68fafb0",
+    "formal_pair_metrics": "b2af393ddaea53bf7b316a579a0bfbdbd20a5e29c5853bdb6a134bb4472e8b3e",
+    "formal_analysis_metric_rows": "4db038a12125168f42f0849bbcb2b0c6c36d85c9c5f0317529cda8132ee18da3",
+    "formal_postprocess_terminal": "daf4b8e9174a74e987cfa1cd9c63484878ed7f95a7de2986f7320475b8ee2454",
+    "anonymous_direction_authority": "6e0e969c3c73b3992b7212900614bc1772fdd4ec211d54035817ef7ae00a2278"
+  },
+  "private_derived_identity_effects_sha256": "6147bc69efdf8a1b470670289d1f882427bc4ae50b5750e4daefaa2584ec726c",
+  "public_redaction": {
+    "rule": "retain anonymous identity, direction, comparison, five fixed-seed effects, and identity median only",
+    "pair_identifiers_included": false,
+    "per_pair_support_included": false,
+    "absolute_paths_included": false,
+    "public_identity_effects_sha256": "2370d68a948f7e7261ebbfc20906efe5b099b2d161d1c7afb44786e278d6a5b2"
+  },
+  "public_outputs_sha256": {
+    "direction_support_summary": "70960d6dcd4fc1fd7a265d558630dd008257e728e1088bad1bda1fbf72136dde",
+    "ha_distribution_summary": "890e387986e67e56e633d144ab53c58c938ed80a584b7bdafc838735813e67d2",
+    "direction_effect_summary": "3909a560d59c366993038f383b3a44ba3c5e1d1903f9068d72ca842db68f8ef7",
+    "direction_identity_effects": "2370d68a948f7e7261ebbfc20906efe5b099b2d161d1c7afb44786e278d6a5b2",
+    "public_recompute_program": "cea9aeca82422f8706ab22973396956e512bd8dcd4bd22fe6073ae85762bab03",
+    "validation_receipt": "ecdf89185482800e140aefee7b3753276120b6cd3522a7fe70aa886adb28c344",
+    "independent_validation_receipt": "e936654f70c23a7b8adc3fb6dde668615ab6e6704ebbd491f1571c3ae8c43b91"
+  },
+  "validated_counts": {
+    "directions": 12,
+    "identities_per_direction": 100,
+    "comparisons": 3,
+    "public_identity_effect_rows": 3600,
+    "direction_effect_rows": 36,
+    "support_summary_rows": 12
+  },
+  "statistical_boundary": {
+    "confirmatory": false,
+    "new_significance_tests": false,
+    "new_multiple_comparison_corrections": false,
+    "identity_bootstrap_resamples_per_direction_comparison": 10000,
+    "bootstrap_intervals_multiplicity_adjusted": false
+  }
+}

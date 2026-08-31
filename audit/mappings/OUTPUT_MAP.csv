@@ -1,0 +1,20 @@
+manuscript_item,public_status,source_data,rebuild_entry,reference_output,scope_note
+Figure 1,public,,figures/scripts/rebuild_public_figures.py,figures/reference_outputs/v15_model_architecture_zh.png,FrugalFace3D-Lite architecture
+Figure 2,public,figures/source_data/v15_visibility_region_compression.csv,figures/scripts/rebuild_public_figures.py,figures/reference_outputs/v15_visibility_region_evaluation_zh.png,visibility-region decomposition and H-to-A attenuation
+Figure 3,public,figures/source_data/v15_output_form_effects.csv,figures/scripts/rebuild_public_figures.py,figures/reference_outputs/v15_output_form_comparison_zh.png,paired FreeUV outputs from the same forward pass
+Figure 4,public,figures/source_data/v15_multimetric_effects.csv,figures/scripts/rebuild_public_figures.py,figures/reference_outputs/v15_multimetric_effects_zh.png,18 frozen confirmatory comparisons with reader-facing names
+Figure 5,public,figures/source_data/v15_quality_resource_bubbles.csv,figures/scripts/rebuild_public_figures.py,figures/reference_outputs/v15_quality_resource_bubbles_zh.png,quality and full-process resources without a composite ranking
+Figure 6,not redistributed,,,,licensed face derivatives excluded
+Table 3,public,figures/source_data/v15_visibility_region_compression.csv,,,descriptive H-to-A attenuation
+Table 4,public,figures/source_data/v15_output_form_effects.csv,,,paired output-form effects
+Tables 5-6,public,statistics/CONFIRMATORY_COMPARISONS_COMPLETE.csv + statistics/CONFIRMATORY_IDENTITY_EFFECTS.csv,statistics/recompute_public_statistics.py,,complete reporting of the same 18 confirmatory identity-level comparisons
+Supplementary Figure S1,public,robustness/REALY_H_SUPPORT_SENSITIVITY.csv,figures/scripts/rebuild_public_figures.py,figures/reference_outputs/v15_realy_support_sensitivity_zh.png,five support thresholds and three comparators; no new p-values or Holm recalculation
+Supplementary Figure S2,public,figures/source_data/v15_realy_12direction_effects.csv,figures/scripts/rebuild_public_figures.py,figures/reference_outputs/v15_realy_12direction_effects_zh.png,all 12 directed view pairs retained without a significance test
+Supplementary Figure S3,public,figures/source_data/v15_descriptive_multimetric_panorama.csv,figures/scripts/rebuild_public_figures.py,figures/reference_outputs/v15_descriptive_multimetric_panorama_zh.png,absolute descriptive medians without a composite ranking
+Supplementary Figure S4,not redistributed,,,,licensed face derivatives excluded
+Supplementary Table S7,public,robustness/REALY_H_SUPPORT_SENSITIVITY.csv,,,REALY support-threshold sensitivity
+Supplementary Table S7a,public,robustness/FACESCAPE_H_SUPPORT_SENSITIVITY.csv,,,FaceScape support-threshold sensitivity
+Supplementary Table S8,public,robustness/FACESCAPE_SFACE_COVERAGE_SENSITIVITY.csv,,,FaceScape SFace coverage sensitivity
+Supplementary Table S9,public,robustness/REALY_DIRECTION_SUPPORT_SUMMARY.csv,,,12-direction H and A support distributions
+Supplementary Table S10,public,robustness/REALY_DIRECTION_EFFECT_SUMMARY.csv,robustness/recompute_realy_directional_summary.py,,36 exploratory direction effects with unadjusted identity-bootstrap intervals
+REALY directional identity audit,public,robustness/REALY_DIRECTION_IDENTITY_EFFECTS.csv,robustness/recompute_realy_directional_summary.py,,anonymous identity and fixed-seed effects with pair fields and paths removed

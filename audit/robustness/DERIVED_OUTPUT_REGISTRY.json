@@ -1,0 +1,139 @@
+{
+  "active_figure_bindings": {
+    "Figure 1": "../figures/reference_outputs/v15_model_architecture_zh.png",
+    "Figure 2": "../figures/reference_outputs/v15_visibility_region_evaluation_zh.png",
+    "Figure 3": "../figures/reference_outputs/v15_output_form_comparison_zh.png",
+    "Figure 4": "../figures/reference_outputs/v15_multimetric_effects_zh.png",
+    "Figure 5": "../figures/reference_outputs/v15_quality_resource_bubbles_zh.png",
+    "Supplementary Figure S1": "../figures/reference_outputs/v15_realy_support_sensitivity_zh.png",
+    "Supplementary Figure S2": "../figures/reference_outputs/v15_realy_12direction_effects_zh.png",
+    "Supplementary Figure S3": "../figures/reference_outputs/v15_descriptive_multimetric_panorama_zh.png"
+  },
+  "complete_confirmatory_reporting": {
+    "comparison_count": 18,
+    "confirmatory_design_changed": false,
+    "file": "../statistics/CONFIRMATORY_COMPARISONS_COMPLETE.csv",
+    "identity_effect_file": "../statistics/CONFIRMATORY_IDENTITY_EFFECTS.csv",
+    "identity_effect_sha256": "30106cbb3ab2cdb819fa95b85bff70c9db4c246153bf864fb036ed95f75559d7",
+    "sha256": "1da92c44399cd941baec22036cb53d153feba727f7fbdaee037294170cedf496",
+    "validation_receipt": "../validation/P0_STATS_VALIDATION_RECEIPT.json",
+    "validation_receipt_sha256": "dd24087086124db6a0f994bd79a8402aff53a5287241afc6c5f1be77a449076e"
+  },
+  "entries": [
+    {
+      "analysis": "hidden_region_support_threshold",
+      "confirmatory": false,
+      "dataset": "REALY",
+      "figure_binding": "Supplementary Figure S1",
+      "file": "REALY_H_SUPPORT_SENSITIVITY.csv",
+      "reference_output": "../figures/reference_outputs/v15_realy_support_sensitivity_zh.png",
+      "sha256": "f615997ea03fab817170768da58ec0687972a3ad63091c3a66f921d2d368006d",
+      "status": "included_and_previously_validated"
+    },
+    {
+      "analysis": "sface_identity_coverage",
+      "confirmatory": false,
+      "dataset": "FaceScape",
+      "file": "FACESCAPE_SFACE_COVERAGE_SENSITIVITY.csv",
+      "sha256": "c3cc4cd9a2c9553fb1c7f233f7f7f017ca002566a2cd2a6216b2515a4f6c9656",
+      "status": "included_and_previously_validated"
+    },
+    {
+      "analysis": "hidden_region_support_threshold",
+      "confirmatory": false,
+      "coverage_file": "FACESCAPE_H_SUPPORT_COVERAGE.csv",
+      "coverage_sha256": "c3044924ce51b458387b6e9507f04ca3787e64f1bc813c86103c77a937c0256d",
+      "dataset": "FaceScape",
+      "file": "FACESCAPE_H_SUPPORT_SENSITIVITY.csv",
+      "holm_recalculated": false,
+      "identity_effect_file": "FACESCAPE_H_SUPPORT_IDENTITY_EFFECTS.csv",
+      "identity_effect_sha256": "7d2ea0981217c053d46a6adbfc225e4375c9338d9ee6eec4c6a9b2b899b44a3f",
+      "new_p_values": false,
+      "required_comparators": [
+        "condition0",
+        "b_lite_ft",
+        "freeuv_conserved"
+      ],
+      "required_thresholds_texels": [
+        1,
+        5,
+        10,
+        20,
+        50
+      ],
+      "row_count": 15,
+      "sha256": "93724a33d0259c9a62ff431e01e9ed5d83be396aa87e858d1108ed2a036cbcf7",
+      "status": "included_and_independently_validated"
+    },
+    {
+      "analysis": "all_12_directed_view_pairs_support_distribution",
+      "confirmatory": false,
+      "dataset": "REALY",
+      "direction_count": 12,
+      "distribution_file": "REALY_HA_DISTRIBUTION_SUMMARY.json",
+      "distribution_sha256": "890e387986e67e56e633d144ab53c58c938ed80a584b7bdafc838735813e67d2",
+      "file": "REALY_DIRECTION_SUPPORT_SUMMARY.csv",
+      "holm_recalculated": false,
+      "identity_count_per_direction": 100,
+      "new_p_values": false,
+      "row_count": 12,
+      "sha256": "70960d6dcd4fc1fd7a265d558630dd008257e728e1088bad1bda1fbf72136dde",
+      "status": "included_and_independently_validated",
+      "table_binding": "Supplementary Table S9"
+    },
+    {
+      "analysis": "all_12_directed_view_pairs_hidden_uv_mae_effects",
+      "confirmatory": false,
+      "dataset": "REALY",
+      "figure_binding": "Supplementary Figure S2",
+      "file": "REALY_DIRECTION_EFFECT_SUMMARY.csv",
+      "holm_recalculated": false,
+      "identity_effect_file": "REALY_DIRECTION_IDENTITY_EFFECTS.csv",
+      "identity_effect_row_count": 3600,
+      "identity_effect_sha256": "2370d68a948f7e7261ebbfc20906efe5b099b2d161d1c7afb44786e278d6a5b2",
+      "new_p_values": false,
+      "pair_identifiers_included": false,
+      "paths_included": false,
+      "per_pair_support_included": false,
+      "recompute_program": "recompute_realy_directional_summary.py",
+      "recompute_program_sha256": "cea9aeca82422f8706ab22973396956e512bd8dcd4bd22fe6073ae85762bab03",
+      "reference_output": "../figures/reference_outputs/v15_realy_12direction_effects_zh.png",
+      "required_comparators": [
+        "condition0",
+        "b_lite_ft",
+        "freeuv_conserved"
+      ],
+      "row_count": 36,
+      "sha256": "3909a560d59c366993038f383b3a44ba3c5e1d1903f9068d72ca842db68f8ef7",
+      "status": "included_and_independently_recomputable",
+      "table_binding": "Supplementary Table S10"
+    }
+  ],
+  "formal_archive_sha256": "41d62c40ec3c7959c91eeb896da3a9895128734479413ab42377b2425312e665",
+  "reader_layer_sync": {
+    "Figure 2": {
+      "asset_sha256": {
+        "pdf": "80ec5a4eb5cfd5d0e583f6346e1d3149f690457865241a9df6f61ab980cc0ca0",
+        "png": "4ffcbd9babf6bc67dbd1662322eb739ff8a4ae81d57d8520cbc95cad6c1e7b86",
+        "svg": "ddad86396f94fa93a22284e207055a955788267ed57059a5f99e8db5345526f9",
+        "tiff": "b6e1fcce1e74905710a2186aed8bf860942689c3e413e5bf3787df46ad4f0d15"
+      },
+      "source": "../figures/source_data/v15_visibility_region_compression.csv",
+      "source_sha256": "a592bb3ba392f340c59151dbbf0af359f2c10b32528436e1a8c1bb49212e3d1c"
+    },
+    "Figure 4": {
+      "asset_sha256": {
+        "pdf": "cfb6bfb024c04e4c9edc60c5e8096747dbe20cdc4eb93175a0abdbf03be047e7",
+        "png": "dabb8da3bbe04ef67207fe591fab815eb5e177013e872e4f3d35f752b1f3defb",
+        "svg": "45bc43970e50880c442533df68c96aca8654cf003047b05619be9644e83cc7c5",
+        "tiff": "98fc9daf30421a3237ab5079cffbb14cfe2aeb568e593c944603a566127deb12"
+      },
+      "source": "../figures/source_data/v15_multimetric_effects.csv",
+      "source_sha256": "9ae7645d043d8f068fc2c9064c7fcd7067dec572f0603319bd4b2a074820bab9"
+    },
+    "active_renderer": "../figures/scripts/make_v15_figures.py",
+    "active_renderer_sha256": "995f01adc106ef288443bddcf41044329235ba86c669fc9afe5cf317adf80cfe",
+    "licensed_face_items_redistributed": false
+  },
+  "schema_version": "frugalface3d.v15.robustness_registry.v7"
+}

@@ -1,0 +1,40 @@
+{
+  "canonical_domain": {
+    "asset_included": false,
+    "parsed_array_sha256": "7a3f9bd59eebcaf3471892c4569f3e4aa5a0510d9d5c003a1ddce3977fd2fd69",
+    "resolution": "64x64",
+    "source_asset_name": "uv_face_eye_mask.png",
+    "source_asset_sha256": "a5069d8ffaf020008ae92d5062c4e98600f723aac4eb869731f190e4630467b5",
+    "verification_tool": "tools/verify_mcanon.py"
+  },
+  "derived_biometric_rows_included": false,
+  "provider_data_included": false,
+  "schema_version": "frugalface3d.v15.public_asset_split_register.v2",
+  "splits": [
+    {
+      "fit_count": 120,
+      "name": "B-lite FFHQ image split",
+      "row_manifest_included": false,
+      "selection_count": 20,
+      "unit": "image"
+    },
+    {
+      "fit_count": 2400,
+      "name": "expression auxiliary FFHQ split",
+      "row_manifest_included": false,
+      "selection_count": 270,
+      "selection_partition_role": "AUXILIARY_DIAGNOSTIC_NOT_INDEPENDENT_IDENTITY_VALIDATION",
+      "unit": "sample"
+    },
+    {
+      "development_count": 6,
+      "development_role": "development-stage structure and loss freezing, qualification audit, and deployment-seed selection; excluded from the formal 512-step matched training",
+      "fit_count": 30,
+      "identity_disjoint": true,
+      "name": "FaceScape matched-training split",
+      "row_manifest_included": false,
+      "unit": "identity"
+    }
+  ],
+  "status": "COUNTS_AND_ROLES_ONLY__NO_ROWS_OR_ASSETS_DISTRIBUTED"
+}

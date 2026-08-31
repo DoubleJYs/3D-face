@@ -1,0 +1,149 @@
+{
+  "schema_version": "frugalface3d.review_closure.canonreg.v1",
+  "status": "SOURCE_ONLY_NO_SCIENTIFIC_RESULT",
+  "program_id": "FRUGALFACE3D-V15-REVIEW-CANONREG-V1",
+  "variant": {
+    "method_id": "canonreg",
+    "paper_label": "CanonReg",
+    "reference_method": "Full",
+    "architecture_change": false,
+    "trainable_parameters": 89386,
+    "changed_terms_only": [
+      "bounded_residual_L2",
+      "total_variation"
+    ]
+  },
+  "seed_plan": [
+    2026080447,
+    2026080448,
+    2026080449,
+    2026080450,
+    2026080451
+  ],
+  "training": {
+    "optimizer": "AdamW",
+    "steps_per_unit": 512,
+    "batch_size": 24,
+    "learning_rate": 0.0005,
+    "weight_decay": 0.0001,
+    "gradient_clip_l2": 1.0,
+    "identity_triplet_margin": 0.1,
+    "training_units": 5,
+    "optimizer_steps_total": 2560,
+    "automatic_retry": false,
+    "checkpoint_selection": false,
+    "loss_weights": {
+      "paired_hidden_UV_L1": 8.0,
+      "paired_hidden_uncertainty_NLL": 0.25,
+      "same_identity_view_consistency": 0.5,
+      "identity_triplet": 0.25,
+      "structure_gate_noncollapse": 0.05,
+      "bounded_residual_L2": 0.01,
+      "total_variation": 0.01
+    }
+  },
+  "regularization_definition": {
+    "residual_field": "(completed_uv-base_completion)*(1-source_visibility)",
+    "bounded_residual_L2": "with R=(completed_uv-base_completion)*(1-Vs), per-sample sum(R^2*Mcanon)/(3*sum(Mcanon*(1-Vs))), then batch mean",
+    "total_variation_horizontal": "per-sample sum(abs(R[:,:,:,1:]-R[:,:,:,:-1])*Mcanon_edge_x)/(3*sum(Mcanon_edge_x)), then batch mean",
+    "total_variation_vertical": "per-sample sum(abs(R[:,:,1:,:]-R[:,:,:-1,:])*Mcanon_edge_y)/(3*sum(Mcanon_edge_y)), then batch mean",
+    "total_variation": "horizontal+vertical",
+    "canonical_edge_rule": "an edge is retained iff both endpoints are in Mcanon",
+    "visible_hidden_boundary_rule": "visible-hidden edges inside Mcanon are retained because only Mcanon defines TV edges"
+  },
+  "formal_environment": {
+    "python_version": "3.10.20",
+    "torch_version": "2.4.0+cu121",
+    "device_backend": "cuda",
+    "device_name": "NVIDIA GeForce RTX 4090",
+    "cuda_version": "12.1",
+    "cudnn_version": 90100,
+    "compute_capability": [
+      8,
+      9
+    ],
+    "cublas_workspace_config_allowed": [
+      ":4096:8",
+      ":16:8"
+    ],
+    "deterministic_algorithms": true,
+    "tf32": false
+  },
+  "b_lite_checkpoint": {
+    "repository_relative_path": "outputs/w5b13b2_e3c/selected_b_lite.pt",
+    "sha256": "2e7799205711a3bb0c809e47ea916e75e8e164dc1d4260f0fd97a8f2f1ac5da9",
+    "use": "provenance binding for the base_completion cache; weights are not updated by CanonReg"
+  },
+  "private_inputs": {
+    "fit_cache": {
+      "recommended_upload_relative_path": "private/training_fit_cache",
+      "expected_rows": 288,
+      "expected_fit_train_rows": 240,
+      "expected_fit_validation_rows": 48,
+      "expected_eligible_fit_train_rows": 238,
+      "manifest_file": "CACHE_MANIFEST.json",
+      "manifest_sha256": "c407b911230ef749afeca7c0b1a571a67869a92200e5ef8698be3927068610ec",
+      "tensor_file": "TRAINING_TENSORS.pt",
+      "tensor_sha256": "98db0b5962f8505c84f15df74a3302e30210df8eb4d5493c5894a971a40917fc"
+    },
+    "facescape_eval_cache": {
+      "recommended_upload_relative_path": "private/d1_facescape_eval_cache",
+      "dataset_id": "facescape",
+      "dataset_token": "D1",
+      "expected_rows": 160,
+      "manifest_file": "EVAL_CACHE_MANIFEST.json",
+      "manifest_sha256": "b8ac441086a519295b1deda0afbe397ea7c420d8c827b3e9bc5882fb8dfcd278",
+      "tensor_file": "EVAL_TENSORS.pt",
+      "tensor_sha256": "5fa2e9b576561e0751058bd72758a90d6db583d5fd08aad30642302860fbbeb4"
+    },
+    "realy_eval_cache": {
+      "recommended_upload_relative_path": "private/d2_realy_source_cache",
+      "dataset_id": "realy",
+      "dataset_token": "D2",
+      "expected_rows": 400,
+      "manifest_file": "REALY_SOURCE_CACHE_MANIFEST.json",
+      "manifest_sha256": "f61f4ca6868267ca5d3fa5f45bde90c9412554c5bbbff5393f46e048e0e957a7",
+      "tensor_file": "REALY_SOURCE_TENSORS.pt",
+      "tensor_sha256": "7981a40b74a8e4828a001aef22c37dc0404944594943bd8b27bd79ffb27d1562"
+    }
+  },
+  "upstream_source_lock": [
+    {
+      "path": "reproducibility/w5b49n_v14_matched_controls_v1/core.py",
+      "sha256": "211165bbffae7cae92f97b5e1b57d752d10996963a5fc0602e65b598ca67ad86"
+    },
+    {
+      "path": "frugalface3d/models/structure_aware_b_qualification.py",
+      "sha256": "5c88dfa3b3bb323763152279101d4f73eed495ac2d236e5a00db8fdf5a7e8115"
+    },
+    {
+      "path": "frugalface3d/models/structure_aware_b_mechanism_v1.py",
+      "sha256": "5ab4e27387f780f65e8a83c5911f0068f698200755358d3077ad5127cff52551"
+    },
+    {
+      "path": "frugalface3d/models/uv_completion_lite.py",
+      "sha256": "b00c80990685edbb75c61b1ccf7083c4b72316bd0629ef0b55fd6e8d14641f69"
+    },
+    {
+      "path": "reproducibility/w5b49n_mechanism_closure_v1/training/cache_io.py",
+      "sha256": "3a3b18e4f699735a7f12b4132eaca17960cc468c36b563969ac849e7b48f515d"
+    },
+    {
+      "path": "reproducibility/w5b49n_mechanism_closure_v1/runtime/eval_cache_io.py",
+      "sha256": "45c5a05ae1cbb0352d157716d8ca67c144ba37c6a2c99a88fffe9bcf19ff07f6"
+    },
+    {
+      "path": "reproducibility/w5b49n_mechanism_closure_v1/runtime/realy_eval_cache_io.py",
+      "sha256": "ded2522a79cce71c1657544390e7e21322259c0d532cdb3ebe83c8f59f1b5a59"
+    }
+  ],
+  "output_contract": {
+    "training_terminal": "TRAINING_TERMINAL.json",
+    "facescape_inference_terminal": "INFERENCE_TERMINAL.json",
+    "realy_inference_terminal": "INFERENCE_TERMINAL.json",
+    "combined_closure_terminal": "CLOSURE_TERMINAL.json",
+    "raw_outputs_only": true,
+    "pair_metrics_generated": false,
+    "manuscript_modified": false
+  }
+}

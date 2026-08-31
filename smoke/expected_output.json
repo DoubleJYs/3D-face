@@ -1,0 +1,15 @@
+{
+  "all_visible_mae_model": 3.666666666667,
+  "all_visible_mae_preserved": 2.0,
+  "all_visible_texels": 6,
+  "dilution_identity_holds_model": true,
+  "dilution_identity_holds_preserved": true,
+  "hidden_mae_model": 4.0,
+  "hidden_mae_preserved": 4.0,
+  "hidden_texels": 3,
+  "observed_mae_model": 3.333333333333,
+  "observed_mae_preserved": 0.0,
+  "observed_texels": 3,
+  "schema_version": "frugalface3d.visibility_protocol_smoke.output.v1",
+  "status": "PASS_VISIBILITY_PROTOCOL_SMOKE"
+}

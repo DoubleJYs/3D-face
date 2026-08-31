@@ -1,0 +1,53 @@
+{
+  "canonical_support": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+  ],
+  "model_texture": [
+    12,
+    24,
+    35,
+    46,
+    53,
+    62,
+    0,
+    0
+  ],
+  "schema_version": "frugalface3d.visibility_protocol_smoke.fixture.v1",
+  "source_visibility": [
+    1,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0
+  ],
+  "target_texture": [
+    10,
+    20,
+    30,
+    40,
+    50,
+    60,
+    0,
+    0
+  ],
+  "target_visibility": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0
+  ]
+}
